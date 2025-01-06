@@ -6,13 +6,13 @@ import useStore from "../store/products"
 const Product = () => {
  const {productId} = useParams()
  const [product , setProduct] = useState()
- const {incrementCartItems} = useStore()
+ const {incrementCartItems} = useStore() 
 
  const fetchProduct = async () => {
     try {
         const response = await axiosInstance.get(`/products/${productId}`)
-        console.log(response.data.product)
-        setProduct(response.data.product)
+        console.log(response.data)
+        setProduct(response.data)
     } catch (error) {
        console.log(error) 
     }
