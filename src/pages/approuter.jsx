@@ -11,20 +11,6 @@ import Checkout from "./checkout";
 
 
 
-// const ProtectedRoute = (props) => {
-//   const {user } = userStore();
-//   const navigate = useNavigate();
-
-//   useEffect(() => {
-//     if(!user) {
-//       alert("navigate to login");
-//       navigate("/login");
-//     }
-//   },
-// [user, navigate]);
-// if (user) return null;
-// return <div>{props.children}</div>
-// }
 
 export default function AppRouter() {
   return (

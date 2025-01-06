@@ -2,7 +2,7 @@ import axios from "axios";
 import useUserStore from "../store/user";
 
 export const axiosInstance = axios.create({
-  baseURL: "https://backendd-ltsx.onrender.com",
+  baseURL: "https://backendelysia.onrender.com",
   timeout: 10000,
 });
 
